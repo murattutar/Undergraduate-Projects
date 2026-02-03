@@ -1,30 +1,244 @@
+README — Undergraduate Projects Portfolio (B.Sc. Industrial Engineering)
+======================================================================
 
-Murat Tutar – Undergraduate Projects (Bogazici University, Industrial Engineering, Class of 2024)
+Author
+------
+Murat Tutar
 
-**Background**
+Undergraduate Background
+------------------------
+- Boğaziçi University (Bogazici University), Department of Industrial Engineering
+- B.Sc. graduation: 2024
+- Academic focus: operations research, simulation, forecasting, data mining/ML, and applied optimization
+- Core toolkit used across projects: Python, R, C/C++, Arena Simulation, linear/integer programming (PuLP),
+  and object-oriented design
 
-Murat Tutar completed his B.Sc. in Industrial Engineering at Bogazici University in Istanbul, graduating in 2024.  During his undergraduate studies he worked on a diverse set of projects and assignments spanning data mining, operations research, simulation and applied optimization.
 
-**Projects**
+Repository Contents (high level)
+--------------------------------
+This repository contains selected coursework projects, homework deliverables, and the senior graduation
+(capstone) report. Files are grouped by project below (PDF reports and ZIP code bundles).
 
-1. **Classification of Emails Using R (IE425 Decision Trees & Random Forests):**  This assignment explored spam detection using decision trees and random forests.  The dataset contained 4 601 emails described by 57 attributes and no missing valuesraw.githubusercontent.com/murattutar/Undergraduate-Projects/main/Classification%20of%20Emails%20Using%20R.pdf#:~:text=%E2%97%8F%20%20The%20shape%20of,null%20value%20%E0%B6%88n%20the%20dataset.  The data were split 80/20 into training and test sets.  A large decision tree was grown and pruned to an optimal size of 64 leaves using cross‑validation.  The pruned tree achieved higher accuracy (≈0.92) and precision (≈0.93) than the largest treeraw.githubusercontent.com/murattutar/Undergraduate-Projects/main/Classification%20of%20Emails%20Using%20R.pdf#:~:text=error%20rate%2C%20false%20pos%E0%B6%88t%E0%B6%88ve%20rate%2C,0781759.  Metrics such as false‑positive and false‑negative rates were compared, illustrating how pruning improved generalization.
 
-2. **Estimating AGV Requirements for a Manufacturing System (IE312 project):**  In this report the team assessed whether and how many automated guided vehicles (AGVs) should be deployed in a factory.  They surveyed advantages (e.g., labour cost savings and safety) and disadvantages (high capital cost, limited flexibility) of AGVsraw.githubusercontent.com/murattutar/Undergraduate-Projects/main/Estimating%20AGV%20Requirements%20for%20a%20Manufacturing%20System.pdf#:~:text=2.1%20,1.  Using methods from Egbelu’s article, they computed required AGV numbers under four analytical methods and compared resultsraw.githubusercontent.com/murattutar/Undergraduate-Projects/main/Estimating%20AGV%20Requirements%20for%20a%20Manufacturing%20System.pdf#:~:text=the%20benefits%20and%20disadvantages%20of,methods%20together%20with%20the%20benefits.  The study concluded that the third method provided the most comprehensive approach and recommended deploying five vehiclesraw.githubusercontent.com/murattutar/Undergraduate-Projects/main/Estimating%20AGV%20Requirements%20for%20a%20Manufacturing%20System.pdf#:~:text=that%20would%20be%20serving%20is,when%20compared%20to%20its%20peers.
+Project Summaries
+=================
 
-3. **Forecasting Gasoline and Diesel Sales (IE360 project):**  This team project forecasted gasoline (UGS) and diesel (DGS) sales using both time‑series and regression models.  After plotting the data, they observed seasonality (peak sales in July, troughs in January) and a downward trend for gasoline while diesel sales increased over timeraw.githubusercontent.com/murattutar/Undergraduate-Projects/main/Forecasting%20Gasoline%20and%20Diesel%20Sales.pdf#:~:text=We%20visually%20examined%20the%20data%27s,do%20not%20look%20stationary%20because.  The dataset was tested for stationarity with Augmented Dickey–Fuller tests and differencing was applied to make the series stationaryraw.githubusercontent.com/murattutar/Undergraduate-Projects/main/Forecasting%20Gasoline%20and%20Diesel%20Sales.pdf#:~:text=2,Analysis.  Autocorrelation and partial autocorrelation analyses guided ARIMA model selectionraw.githubusercontent.com/murattutar/Undergraduate-Projects/main/Forecasting%20Gasoline%20and%20Diesel%20Sales.pdf#:~:text=When%20we%20analyze%20the%20autocorrelation,relation%20with%20the%20decreasing%20trend.  Regression models incorporated variables like fuel prices and components of Gross National Product, and the team compared model performance to select the best forecasting approach.
+1) IE 492 Graduation Project — Conversational Schedule Explainer (Capstone)
+---------------------------------------------------------------------------
+File: "Interpretable AI in explaining a Staff Schedule.pdf"
+(Report title: "Conversational Schedule Explainer with ChatGPT")
 
-4. **Production Planning with Python PuLP (IE313 assignment):**  Murat formulated an aggregate production planning model for basic and pro caravans.  The decision variables included monthly production levels, inventories, workforce size, overtime, hiring and firing.  Using Python’s PuLP library he minimized total cost while meeting monthly demand.  The base model achieved an optimal total cost of $3.506 millionraw.githubusercontent.com/murattutar/Undergraduate-Projects/main/Python%20PuLP%20-%20Production%20Planning.pdf#:~:text=The%20optimum%20total%20cost%20is,production%20and%20inventory%20is%20below.  Alternative scenarios allowed extra workforce in certain months, reducing cost slightly to $3.505 millionraw.githubusercontent.com/murattutar/Undergraduate-Projects/main/Python%20PuLP%20-%20Production%20Planning.pdf#:~:text=with%2060%20hours%20and%202160,total%20cost%20decreased%20to%20%243%2C505%2C712.  The analysis showed that inventory holding costs were preferable to workforce hiring costs; thus production was smoothed and overtime was used before high‑demand monthsraw.githubusercontent.com/murattutar/Undergraduate-Projects/main/Python%20PuLP%20-%20Production%20Planning.pdf#:~:text=Overall%2C%20in%20every%20three%20model%3B,workers%20and%20keeping%20low%20inventory.
+What it is:
+- A capstone project focused on transparency in workforce scheduling decisions.
+- The system combines:
+  (i) an optimization-based scheduling backend (Gurobi model), and
+  (ii) a natural-language “explanation layer” (ChatGPT API) that answers employee questions about the schedule.
 
-5. **Queue Simulation – Discrete Event Scheduling (IE306 homework):**  Murat simulated a two‑server queueing system using random number streams.  Interarrival times were uniformly distributed between 5 and 17 minutes and service times had separate distributions for each serverraw.githubusercontent.com/murattutar/Undergraduate-Projects/main/Queue%20Simulation%20-%20Discrete%20Event%20Scheduling.pdf#:~:text=IE%20306%20Homework%202%20%E2%80%93,12%201.  Calculations were performed in R and a C++ implementation reproduced the event‑driven simulationraw.githubusercontent.com/murattutar/Undergraduate-Projects/main/Queue%20Simulation%20-%20Discrete%20Event%20Scheduling.pdf#:~:text=a,include%20%3Calgorithm.  The simulation generated arrival and departure events, tracked queue length and server status, and computed performance measures such as waiting times and system utilization.
+Problem motivation:
+- In service environments with fluctuating demand, schedules can feel opaque to employees.
+- Employees often ask: “Why do I work this shift?”, “Can I swap shifts?”, “Can I leave early?”, “What happens if…?”
+- The project builds a conversational interface that explains constraints/objectives and supports structured requests.
 
-6. **Queue Simulation with ARENA (IE306 homework 6):**  This assignment used Rockwell Arena to model a food service system.  The simulation generated multiple replications and reported statistics such as time spent in the service queue, average queue lengths and server utilizationraw.githubusercontent.com/murattutar/Undergraduate-Projects/main/Queue%20Simulation%20with%20ARENA.pdf#:~:text=TALLY%20VARIABLES.  Results across four replications highlighted how average utilization of food servers approached 0.75–0.90 and the cashier around 0.75raw.githubusercontent.com/murattutar/Undergraduate-Projects/main/Queue%20Simulation%20with%20ARENA.pdf#:~:text=Identifier%20%20%20%20,Observations%20____________________________________________________________________________.
+Key deliverables / system design:
+- Question taxonomy to cover realistic interactions:
+  - FAQ-style questions: “How many hours do I work this week?”, “When is my break?”, etc.
+  - Query questions: questions about schedule properties / constraint implications.
+  - Request questions: “Can you move my shift?”, “Can I work fewer nights?”, feasibility checks + re-optimization.
+  - Reasoning questions: “Why was I assigned X instead of Y?”, explanation of trade-offs and constraints.
+- Backend functions connect the schedule model to explanations:
+  - Uses constraint/objective information to justify assignments.
+  - For feasible “request” changes, applies modifications and resolves the model.
+  - Returns structured outputs (what changed, feasibility, expected impacts) translated into human language.
+- UI focus:
+  - Emphasis on usability and “employee-friendly” communication (not just technical optimality).
+  - Designed to reduce administrative burden for managers and increase employee engagement.
 
-7. **Object‑Oriented Game Design and Implementation:**  In a software engineering course Murat collaborated on designing and implementing a game using object‑oriented principles.  The project involved defining classes for players, enemies and game mechanics, applying inheritance and polymorphism, and developing a user interface.  (Artifacts in the repository include a ZIP archive with source code and executable.)
+What it demonstrates:
+- End-to-end system thinking: optimization model + interface + natural language explanation.
+- Practical explainability: mapping model logic (constraints, objective, feasibility) into understandable answers.
+- A strong bridge between OR and human-centered AI.
 
-8. **Unconstrained Mathematical Optimisation – Gradient Descent:**  This project focused on implementing gradient descent algorithms for solving unconstrained optimization problems.  The team developed code to compute gradients, apply step‑size rules, and visualise convergence on test functions.  The ZIP archive contains code and documentation.
 
-9. **Conversational Schedule Explainer with ChatGPT – Graduation Thesis (IE492):**  Murat’s capstone project addressed the lack of transparency in employee scheduling.  The system integrates a Gurobi optimization model with the ChatGPT API to provide natural‑language explanations of scheduling decisionsraw.githubusercontent.com/murattutar/Undergraduate-Projects/main/XAI%20for%20Transparency%20-%20GenAI%20in%20Explaining%20a%20Gurobi-based%20optimization%20model.pdf#:~:text=Abstract.  The report discusses problem definition, requirements, literature review and design methodology, and describes how the interface answers query, request and reasoning questions.  By enabling employees to ask why they received certain shifts and by explaining optimization constraints, the tool aims to enhance employee engagement and operational efficiency.
+2) Email Classification (R) — Decision Trees & Random Forests
+------------------------------------------------------------
+File: "Classification of Emails Using R.pdf"
 
-**Contact**
+What it is:
+- A supervised learning / data mining project in R where the objective is to classify emails.
+- The emphasis is on tree-based methods and performance comparison.
 
-Feel free to reach out via murattutarb@gmail.com for any questions about these projects.
+Key components:
+- Data preparation and train/test split (and/or cross-validation, depending on the course setup).
+- Baseline decision tree model:
+  - Model fitting, interpretation of splits, and diagnosing overfitting.
+  - Pruning / complexity control to improve generalization.
+- Random forest model:
+  - Ensemble learning to improve robustness vs a single tree.
+  - Tuning key parameters (e.g., number of trees / sampled features) and evaluating results.
+
+Outputs and evaluation (typical for the report):
+- Confusion matrix + error metrics (accuracy and class-specific errors).
+- Discussion of model trade-offs: interpretability (tree) vs performance (forest).
+
+
+3) Forecasting Gasoline & Diesel Sales — Time Series Modeling
+------------------------------------------------------------
+File: "Forecasting Gasoline and Diesel Sales.pdf"
+
+What it is:
+- A forecasting report focused on predicting sales for two fuel products (gasoline and diesel).
+- The report emphasizes classical time-series workflow: exploration → stationarity/seasonality checks →
+  model fitting → model comparison → final forecast.
+
+Key components:
+- Exploratory analysis:
+  - Trend and seasonality inspection, outlier checks, and transformations when needed.
+- Model candidates (typical course scope):
+  - Decomposition / seasonal baselines
+  - Exponential smoothing family
+  - ARIMA/SARIMA-style models (and diagnostics such as residual checks)
+  - Regression-based alternatives using time/seasonality features
+- Model comparison:
+  - Uses a validation approach (holdout window or rolling evaluation) and compares forecast errors.
+  - Selects a final model with a justification (accuracy + stability + interpretability).
+
+Outputs:
+- Final forecasts for both product series and a short managerial interpretation of expected movement/drivers.
+
+
+4) Estimating AGV Requirements for a Manufacturing System
+---------------------------------------------------------
+File: "Estimating AGV Requirements for a Manufacturing System.pdf"
+
+What it is:
+- A manufacturing systems / material handling analysis to estimate the number of Automated Guided Vehicles (AGVs)
+  required to support a given production and transport workload.
+
+Key components:
+- Formalizes the internal transport problem (loads, routes, travel times, pickup/drop-off, service times).
+- Compares multiple estimation approaches (the report contrasts methods and discusses their assumptions).
+- Produces a recommendation for the AGV fleet size based on:
+  - utilization implications,
+  - congestion/queueing risk,
+  - robustness to variability and workload peaks.
+
+Outputs:
+- A reasoned recommendation (not just a single number) and a discussion of which method is most reliable
+  under realistic shop-floor conditions.
+
+
+5) Aggregate Production Planning with Python PuLP (LP/MIP)
+----------------------------------------------------------
+File: "Python PuLP - Production Planning.pdf"
+
+What it is:
+- An aggregate production planning optimization model implemented in Python using PuLP.
+
+Problem setting:
+- Two product types (“basic” and “pro” caravans) with different labor requirements and inventory costs.
+- Multi-period planning with demand that varies by month.
+
+Decision variables (as described in the report):
+- Production quantities by product and month
+- Inventory levels
+- Workforce level + overtime
+- Hiring and firing decisions
+
+Objective and constraints:
+- Minimize total cost while meeting demand (production + inventory + labor + overtime + hiring/firing).
+- Inter-period inventory balance, capacity / labor constraints, and policy constraints.
+
+Extensions / what-if analysis:
+- Additional scenario models (e.g., alternative labor options, rental/storage costs) and cost comparison.
+- Managerial interpretation of the resulting production/inventory strategy:
+  - produce ahead of peak demand months,
+  - manage workforce carefully due to hiring/firing costs,
+  - use overtime strategically, etc.
+
+What it demonstrates:
+- Translating a planning problem into a clean optimization model.
+- Interpreting solutions as actionable production/workforce policies.
+
+
+6) Discrete-Event Queue Simulation (Manual + C++ Implementation)
+---------------------------------------------------------------
+File: "Queue Simulation - Discrete Event Scheduling.pdf"
+
+What it is:
+- A two-server queueing system simulated via discrete-event scheduling.
+- The report includes both (i) the event-trace calculations and (ii) a programmed implementation.
+
+Key components:
+- Stochastic inputs (as shown in the report):
+  - Interarrival times drawn from a uniform distribution
+  - Server 1 service times drawn from a uniform distribution
+  - Server 2 service times drawn from a discrete distribution
+- Constructs the Future Event List (arrivals, departures) and updates state variables:
+  - queue length, server busy/idle indicators, waiting times
+- Implementation:
+  - Reproduces the table-driven simulation logic in code (C++), validating that results match the manual trace.
+
+Outputs:
+- Customer-level timeline table and system performance measures (waiting time, queue evolution, utilization proxies).
+
+
+7) Queue Simulation in Arena (Multi-Replication Experiment)
+-----------------------------------------------------------
+File: "Queue Simulation with ARENA.pdf"
+
+What it is:
+- A queueing simulation built in Arena, focusing on model construction, experimentation, and performance reporting.
+
+Key components:
+- Model block diagram + experiment configuration.
+- Multiple replications and summary statistics.
+- Output metrics include:
+  - average time in queue,
+  - average queue length,
+  - server utilization,
+  - and additional counters for special events tracked in the system.
+
+What it demonstrates:
+- Practical simulation workflow in a commercial DES tool: model → replications → confidence/half-width reporting.
+
+
+8) Object-Oriented Game Design & Implementation (Code Bundle)
+-------------------------------------------------------------
+File: "Object Oriented Game Design and Implementation.zip"
+
+What it is:
+- A programming project emphasizing object-oriented design principles:
+  encapsulation, inheritance/polymorphism, and clean class structure.
+
+Typical deliverables inside:
+- Source code implementing a small game/application with OOP architecture.
+- Separation of concerns (game logic vs. UI/IO) and reusable components.
+
+What it demonstrates:
+- Designing a non-trivial codebase with maintainable structure (not a single-script solution).
+
+
+9) Unconstrained Optimization — Gradient Descent (Code Bundle)
+--------------------------------------------------------------
+File: "Unconstrained Mathematical Optimisation - Gradient Descent.zip"
+
+What it is:
+- An implementation-focused optimization project around gradient descent for unconstrained problems.
+
+Typical components inside:
+- Gradient descent algorithm with:
+  - step-size/learning-rate choice (possibly fixed or adaptive),
+  - stopping criteria (tolerance on gradient norm / improvement),
+  - test functions and performance tracking (iterations, convergence behavior).
+
+What it demonstrates:
+- Numerical optimization fundamentals and practical implementation details (convergence, stability, tuning).
+
+
+Notes for Readers / Recruiters
+------------------------------
+- These projects reflect a consistent focus on “model → implementation → interpretation”:
+  building quantitative models, implementing them in code/tools, and translating results into decisions.
+- The capstone (IE 492) is the most end-to-end project, combining optimization + an explainability layer
+  + interface design for a real operational use case.
+
